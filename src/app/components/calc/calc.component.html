@@ -1,0 +1,21 @@
+<form [formGroup]="calcForm" (ngSubmit)="onSubmit()">
+    <div class="number">
+        <label for="number1">
+            Number 1
+        </label>
+        <input id="number1" type="number" formControlName="number1">
+    </div>
+    <div class="number">
+        <label for="number2">
+            Number 2
+        </label>
+        <input id="number2" type="number" formControlName="number2">
+    </div>
+    <div class="number">
+        <label for="result">
+            Result
+        </label>
+        <label>{{result}}</label>
+    </div>  
+    <button class="button" type="submit">Calculate</button>
+</form>
